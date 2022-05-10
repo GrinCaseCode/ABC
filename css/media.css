@@ -739,6 +739,9 @@
 		top: 4px;
 		right: 4px;
 	}
+	.slider-products .item-catalog__image {
+    height: 220px;
+}
 }
 
 /* Custom, iPhone Retina */
