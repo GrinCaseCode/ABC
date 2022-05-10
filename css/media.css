@@ -60,6 +60,22 @@
 	.unit-category__head { 
 		margin-left: -59px;
 	}
+	.item-navigation {
+		padding: 16px 25px;
+	}
+	.slider-for {
+		margin-left: -39px;
+	}
+	.conusultation-block {
+		padding: 47px;
+		padding-top: 75px;
+	}
+	.tabs_card a {
+		padding: 16px 20px;
+	}
+	.tab-container_card {
+		padding: 30px;
+	}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -257,7 +273,100 @@
 	.social-header a {
 		border-radius: 4px;
 		margin-right: 4px;
+		width: 44px;
+		font-size: 0;
 		margin-bottom: 0;
+		transform: none;
+	}
+	.item-navigation {
+		padding: 12px 13px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.item-navigation img {
+		margin-right: 5px;
+	}
+	.item-category__image {
+		transform: scale(0.9);
+		transform-origin: 100% 100%;
+	}
+	.item-catalog__content {
+		padding: 20px;
+	}
+	.item-catalog .link-title {
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.item-catalog__image {
+		height: 210px;
+	}
+	.block-form {
+		padding: 44px 25px;
+		padding-bottom: 35px;
+	}
+	.item-form input, .item-form textarea {
+		padding: 0 15px;
+	}
+	.item-form textarea {
+		padding-top: 15px;
+	}
+	.block-form .row {
+		margin: 0 -7px;
+	}
+	.block-form .row > div {
+		padding: 0 7px;
+	}
+	.contacts-block_page {
+		padding: 45px 25px;
+	}
+	.vacancies .contacts-block {
+		padding: 48px 30px;
+	}
+	.slider-for {
+		margin-left: -5px;
+	}
+	.slider-nav {
+		width: 150px;
+		max-width: initial;
+	}
+	.conusultation-block {
+		padding: 15px;
+		padding-top: 30px;
+	}
+	.conusultation-block .title-middle {
+		font-size: 20px;
+	}
+	.video-card iframe,
+	.image-model,
+	.slider-for__item {
+		height: 375px;
+	}
+	.slider-nav__item {
+		height: 94px;
+	}
+	.tabs a {
+		padding: 12px 20px;
+		font-size: 14px;
+	}
+	.tabs_card a {
+		font-size: 12px;
+		padding: 12px 15px;
+	}
+	.conusultation-block .phone-block {
+		margin-bottom: 15px;
+	}
+	.item-gallery {
+		height: 105px;
+		margin-bottom: 20px;
+	}
+	.item-sertificat {
+		height: 158px;
+	}
+	.slider-products .item-catalog__image {
+		height: 142px;
+	}
+	.slider-products .item-catalog .link-title {
+		font-size: 14px;
 	}
 }
 
@@ -328,6 +437,42 @@
 	.contacts-block__links a:last-child {
 		margin-right: 0;
 	}
+	.title-section {
+		font-size: 21px;
+	}
+	.item-catalog__image {
+		height: 250px;
+	}
+	.contacts-block_page {
+		padding: 45px 35px;
+		min-height: initial;
+		margin-bottom: 25px;
+	}
+	.block-form .checkbox {
+		margin-bottom: 20px;
+	}
+	.block-form {
+		padding: 44px 40px;
+		padding-bottom: 35px;
+	}
+	.contacts-page #map {
+		margin-top: 30px;
+	}
+	.item-vacancy__content {
+		padding: 15px;
+	}
+	.vacancies .contacts-block {
+		padding: 30px;
+	}
+	.slider-for {
+		margin-left: -30px;
+	}
+	.card .conusultation-block {
+		margin-top: 25px;
+	}
+	.item-sertificat {
+		height: 201px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -370,6 +515,122 @@
 	.numbers-block .row {
 		justify-content: flex-start;
 	}
+	.breadcrumbs {
+		padding: 18px 0;
+	}
+	.navigation-wrap {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: initial;
+	}
+	.item-navigation {
+		min-height: 100%;
+		width: 50%;
+		justify-content: flex-start;
+	}
+	.item-navigation img {
+		margin-right: 15px;
+	}
+	.title-section {
+		font-size: 18px;
+	}
+	.categories-page .head-section {
+		padding-top: 25px;
+	}
+	.title-section::before {
+		width: 75px;
+		height: 38px;
+	}
+	.catalog .head-section {
+		padding: 32px 0;
+	}
+	.contacts-page .head-section {
+		padding-bottom: 30px;
+	}
+	.block-form {
+		padding: 35px 25px;
+	}
+	.vacancies .head-section {
+		padding-bottom: 30px;
+	}
+	.title-min {
+		font-size: 16px;
+	}
+	.item-vacancy__content .title-min {
+		margin: 11px 0;
+	}
+	/*youtube video inside fancybox*/
+	.fancybox-type-iframe .fancybox-inner {
+		height: auto !important;
+	}
+	.fancybox-type-iframe iframe{
+		width: calc(100vw - 40px);
+		height: calc(100vw/1.77);
+	}
+	.row_card .col-md-9 {
+		order: -1;
+	}
+	.slider-nav {
+		width: 100%;
+	}
+	.slider-for {
+		margin-left: 0;
+	}
+	.slider-for .slick-prev {
+		left: 10px;
+	}
+	.slider-for .slick-next {
+		right: 10px;
+	}
+	.tab-container_card {
+		padding: 20px 0;
+	}
+	.tabs  {
+		padding-bottom: 5px;
+		white-space: nowrap;
+		margin-right: -15px;
+		margin-left: -15px;
+		padding-left: 15px;
+		overflow: auto;
+	}
+	.item-sertificat {
+		margin-top: 15px;
+		width: 180px;
+		height: 250px;
+		max-width: 100%;
+	}
+	.slider-products .item-catalog__image {
+		height: 165px;
+	}
+	.slider-products .slick-prev {
+		left: 0;
+	}
+	.slider-products .slick-next {
+		right: 0;
+	}
+	.tabs_card {
+		margin-top: 25px;
+	}
+	.conusultation-block {
+		padding: 25px;
+		padding-top: 30px;
+	}
+	.breadcrumbs {
+		flex-wrap: wrap;
+	}
+	.modal-wrap p {
+		margin-bottom: 20px;
+	}
+	.modal-wrap {
+		padding: 45px;
+		text-align: center;
+	}
+	.modal-wrap_thanks p {
+		margin-bottom: 0;
+	}
+	.modal-wrap_thanks {
+		padding: 60px 15px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -400,8 +661,84 @@
 		margin: 0 -15px;
 	}
 	.unit-category__head {
-    margin-left: -29px;
-}
+		margin-left: -29px;
+	}
+	.navigation-categories .container {
+		padding: 0;
+	}
+	.item-navigation img {
+		margin-right: 7px;
+	}
+	.item-navigation {
+		padding: 9px 6px;
+		font-size: 12px;
+	}
+	.title-section::before {
+		display: none;
+	}
+	.categories-page .head-section {
+		padding-top: 15px;
+	}
+	.row_categories {
+		padding-top: 0;
+	}
+	.item-category {
+		padding: 30px 30px;
+	}
+	.catalog .head-section {
+		padding-bottom: 25px;
+	}
+	.contacts-page .head-section {
+		padding-bottom: 25px;
+	}
+	.contacts-block_page {
+		padding: 25px 15px;
+		margin: 0 -15px;
+		margin-bottom: 0px;
+		max-width: initial;
+		width: initial;
+	}
+	.block-form {
+		padding: 25px 15px;
+		margin: 0 -15px;
+		border: none;
+	}
+	.contacts-page #map {
+		margin-top: 0;
+	}
+	.vacancies .head-section {
+		padding-bottom: 20px;
+	}
+	.item-vacancy__head {
+		padding: 14px 11px;
+	}
+	.item-vacancy__content {
+		padding: 10px 0;
+	}
+	.wrapper_page::after, .wrapper_page::before {
+		display: none;
+	}
+	.vacancies .contacts-block {
+		padding: 30px 15px;
+	}
+	.video-card iframe, .image-model, .slider-for__item {
+		height: 275px;
+	}
+	.conusultation-block {
+		padding: 20px;
+		padding-top: 30px;
+	}
+	.item-sertificat {
+		width: 155px;
+		height: 224px;
+	}
+	.modal-wrap {
+		padding: 35px 15px;
+	}
+	.fancybox-close {
+		top: 4px;
+		right: 4px;
+	}
 }
 
 /* Custom, iPhone Retina */
