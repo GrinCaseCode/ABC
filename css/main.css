@@ -48,7 +48,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .wrapper {
 	padding-top: 69px;
-	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -345,7 +344,7 @@ form {
 
 .billbord {
 	min-height: 528px;
-	padding-top: 27px;
+	padding-top: 180px;
 	color: #fff;
 	background-image: url(../img/billbord.jpg);
 	background-repeat: no-repeat;
@@ -366,8 +365,9 @@ form {
 	z-index: -1;
 }
 .title-big {
-	font-size: 54px;
-	line-height: 43px;
+	font-size: 64px;
+	line-height: 53px;
+	text-align: center;
 	font-weight: 700; 	
 	text-transform: uppercase;
 }
@@ -401,7 +401,18 @@ form {
 	box-shadow: 0 0 10px #ccc;
 }
 .unit-category_big {
+	padding-right: 226px;
 	min-height: 574px;
+}
+.unit-category_big::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 1) 100%);
 }
 .unit-category__image {
 	position: absolute;
@@ -438,14 +449,19 @@ form {
 }
 .list-main li {
 	padding-left: 24px;
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 	position: relative; 
+	overflow: hidden; 
+-webkit-column-break-inside: avoid; 
+page-break-inside: avoid;
+break-inside: avoid;
+break-inside: avoid-column;
 }
 .list-main li::before {
 	position: absolute;
 	display: block;
 	content: " ";
-	top: 10px;
+	top: 8px;
 	left: 0;
 	width: 8px;
 	height: 8px;
@@ -462,7 +478,12 @@ form {
 	padding-top: 25px;
 }
 .unit-category_middle {
-	min-height: 311px;
+	min-height: 295px;
+}
+.unit-category_small,
+.unit-category_middle {
+		padding: 37px 45px;
+	padding-right: 145px;
 }
 .list-main_columns {
 	columns: 2;
@@ -487,13 +508,19 @@ form {
 	color: #FFFFFF;
 	border-left: 10px solid #F0DA22;
 	display: inline-block;
+	position: relative;
+	z-index: 2;
 	background-color: #2b313b;
+}
+.unit-category .link-title {
+	position: relative;
+	z-index: 2;
 }
 .about-block {
 	background-color: #f9fafc;
 }
 .about-block__image {
-	height: 426px;
+	height: 504px;
 }
 .about-block__image img {
 	width: 100%;
@@ -539,6 +566,9 @@ form {
 	white-space: nowrap;
 	color: #fff;
 }
+.item-number__value span {
+	opacity: 0;
+}
 .item-number p {
 	font-size: 13px;
 	line-height: 18px;
@@ -571,7 +601,7 @@ form {
 }
 .contacts-block {
 	padding: 64px 72px;
-	left: 60px;
+	right: 60px;
 	top: 79px;
 	position: absolute;
 	width: 460px;
@@ -731,7 +761,7 @@ form {
 	height: 2px;
 	display: block;
 	margin: 0 auto;
-	background-color: #f0da22;
+	background-color: #fff;
 	border: medium none;
 	transition: transform 0.5s, top 0.2s;
 	/* transition-delay: 0.2s, 0s; */
@@ -743,7 +773,7 @@ form {
 	height: 2px;
 	display: block;
 	margin: 0 auto;
-	background-color: #f0da22;
+	background-color: #fff;
 	border: medium none;
 	transition: transform 0.5s, top 0.2s;
 	transition-delay: 0.2s, 0s;
@@ -755,11 +785,12 @@ form {
 	height: 2px;
 	display: block;
 	margin: 0 auto;
-	background-color: #f0da22;
+	background-color: #fff;
 	border: medium none;
 	transition: all 0.5s;
 	transition-delay: 0.1s;
 }
+
 .btn_nav .sandwich.active .sw-topper {
 	top: 15px;
 	transform: rotate(45deg);
@@ -829,7 +860,7 @@ form {
 	justify-content: center;
 }
 .item-navigation {
-	padding: 16px 32px;
+	padding: 16px 24px;
 	letter-spacing: 0.02em;
 	font-weight: 500;
 	color: #728EA6;
@@ -1265,11 +1296,13 @@ form {
 	display: block;
 }
 .conusultation-block {
-	padding: 64px;
+	padding: 64px 62px;
 	padding-top: 75px;
 	background-color: #526978;
 	border-top: 5px solid #F0DA22;
 	color: #fff;
+	position: sticky;
+	top: 68px;
 }
 .conusultation-block .title-middle {
 	margin-bottom: 16px;
@@ -1556,4 +1589,42 @@ form {
 }
 .modal-wrap_thanks .title-middle {
 	margin-bottom: 16px;
+}
+.row_model .slider-nav__item img,
+.row_model .slider-for__item img {
+	width: initial;
+	height: initial;
+	max-width: 100%;
+	max-height: 100%;
+	    object-fit: initial;
+}
+.row_model .slider-nav__item,
+.row_model .slider-for__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fancybox-nav span {
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    opacity: 1;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.fancybox-prev span {
+    left: 20px;
+    background-image: url(../img/prev.svg);
+}
+.fancybox-next span {
+    right: 20px;
+    background-image: url(../img/next.svg);
+}
+.row_units {
+	margin: 0 -8px;
+}
+.row_units > div {
+	padding: 0 8px;
 }
