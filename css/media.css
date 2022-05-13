@@ -692,6 +692,9 @@
 	.modal-wrap_thanks {
 		padding: 60px 15px;
 	}
+	.unit-category_big .list-main {
+		max-width: 275px;
+	}
 }
 
 /* Extra Small Devices, Phones */
