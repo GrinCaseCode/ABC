@@ -695,6 +695,12 @@
 	.unit-category_big .list-main {
 		max-width: 275px;
 	}
+	.tab-container .title-middle {
+    margin-bottom: 15px;
+}
+.item-advantage {
+	margin-bottom: 20px;
+}
 }
 
 /* Extra Small Devices, Phones */

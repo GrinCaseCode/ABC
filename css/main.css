@@ -346,7 +346,7 @@ form {
 	min-height: 528px;
 	padding-top: 180px;
 	color: #fff;
-	background-image: url(../img/billbord.jpg);
+	background-image: url(../img/billbord.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1627,4 +1627,26 @@ break-inside: avoid-column;
 }
 .row_units > div {
 	padding: 0 8px;
+}
+.item-advantage {
+	padding-left: 59px;
+	margin-bottom: 35px;
+	font-size: 14px;
+line-height: 21px;
+	position: relative;
+}
+.item-advantage__icon {
+	width: 43px;
+height: 38px;
+border-left: 4px solid #F0DA22;
+background-color: #2B313B;
+display: flex;	
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+}
+.tab-container .title-middle {
+	margin-bottom: 30px;
 }
