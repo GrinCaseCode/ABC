@@ -434,8 +434,7 @@
 			<p>С вами свяжутся в ближайшее время</p>
 		</div>
 	</div>
-<div id="map_container-2" class="map_mobile">
-</div>
+<div id="map_script" class="map_mobile"></div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -457,9 +456,9 @@
         var elem = document.createElement('script');
         elem.type = 'text/javascript';
         elem.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
-        var div = document.getElementById('map_container-2');
+        var div = document.getElementById('map_script');
         div.after(elem);
-    }, 2000);
+    }, 4000);
 </script>
 <script defer>
 	$(document).ready(function() {
@@ -488,7 +487,7 @@
 			myMap.behaviors.disable('scrollZoom');
 			myMap.geoObjects.add(myPlacemark1);
 		}
-		   }, 4000);
+		   }, 6000);
 	});
 </script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
